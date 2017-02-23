@@ -1,0 +1,55 @@
+body {
+	background-color: white;
+}
+
+/* header */
+.header {
+	color:black;
+	display:inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header .row {
+	height:64px;
+	width: 100%;
+}
+
+#logo {
+	margin-left: 24px;
+}
+
+.nav span {
+
+}
+
+/* ./header */
+
+/* banner */
+.banner {
+	background-color:#b8b8b8 ;
+	color:#323232 ;
+}
+.hero {
+	/*margin-left:24px;*/
+	/*margin-right: 40px;*/
+	margin: 32px 20px 32px 24px;
+}
+.hero img {
+	width: 60%;
+}
+
+.banner .btn {
+	background-color: #323232;
+	color: #FFF;
+}
+.attention {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* ./banner */
+
+/* Main */
+
+/* ./main */
