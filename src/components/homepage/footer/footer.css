@@ -1,0 +1,18 @@
+/* FOOTER */
+.footer p {
+	margin-right: auto;
+}
+.footer a {
+	padding-right: 16px;
+}
+@media only screen and (max-width: 760px) {
+	.terms,
+	.privacy {
+		display: none;
+	}
+	.footer.row {
+		padding: 16px 0 16px 16px;
+	}
+}
+
+/* ./FOOTER */

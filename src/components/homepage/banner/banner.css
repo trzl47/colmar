@@ -1,0 +1,35 @@
+/* BANNER */
+.banner {
+	background-color: lightgrey;
+}
+.banner .right-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.attention {
+	display: flex;
+	flex-direction:column;
+	align-content: center;
+	justify-content: center;
+	padding: 40px 40px;
+}
+
+@media only screen and (max-width: 760px) {
+	.banner.row {
+		padding:unset;
+		flex-direction:column;
+	}
+	.banner .left-column > img {
+		width: 100%;
+		padding: unset;
+	}
+	.banner .right-column{
+	}
+	.attention {
+		display: flex;
+		margin: 32px 16px;
+	}
+}
+
+/* ./BANNER */

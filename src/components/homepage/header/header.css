@@ -1,0 +1,57 @@
+/* HEADER */
+
+.header {
+	padding-top: unset;
+	padding-bottom: unset;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: solid 1px #c6c1c1;
+	height: 64px;
+}
+nav a {
+	padding-right: 16px;
+	display: flex;
+	align-items: center;
+}
+.logo {
+	margin-right: auto;
+}
+.menu {
+	margin-left: auto;
+	display: inline-flex;
+}
+nav .campus img {
+	display: none;
+}
+nav .online img {
+	display: none;
+}
+nav .login img {
+	display: none;
+}
+
+@media only screen and (max-width: 760px) {
+	.header {
+		justify-content:center;
+	}
+	nav a span {
+		display: none;
+	}
+	.logo {
+		margin:unset;
+	}
+	.menu {
+		margin: unset;
+	}
+	nav .campus img {
+		display: block;
+	}
+	nav .online img {
+		display: block;
+	}
+	nav .login img {
+		display: block;
+	}
+}
+
+/* ./HEADER */

@@ -20,6 +20,7 @@
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
     "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-react": "^6.23.0",
     "express": "^4.14.1",
     "file-loader": "^0.10.0",
     "html-webpack-plugin": "^2.28.0",

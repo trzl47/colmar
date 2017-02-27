@@ -1,0 +1,60 @@
+/* COURSES */
+.courses {
+	background-color:lightgrey;
+}
+.deck {
+	display: flex;
+	flex-direction: column;
+}
+.hand.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-items: flex-start;
+/* 	padding: 32px 32px; */
+	align-items: flex-start;
+	align-content: stretch;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.vertical-card {
+	display: flex;
+	flex-direction: column;
+	max-width: 428px;
+	padding: 16px 16px;
+}
+.vertical-card .card-info {
+	background-color: white;
+	padding: 0 16px 24px 16px;
+	display: flex;
+	justify-content: flex-start;
+}
+.card-info > h3 {
+	padding: 16px 0;
+}
+.card-info > p {
+	padding: 8px 0;
+}
+.courses .mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 760px) {
+
+	.courses {
+		background-color: white;
+	}
+	.courses .hand.row {
+		display: none;
+	}
+	.courses .mobile {
+		display: block;
+	}
+	.course {
+		background-color:lightgrey ;
+		padding: 16px;
+		margin-bottom: 8px;
+	}
+}
+
+/* ./COURSES */
