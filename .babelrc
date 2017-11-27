@@ -1,23 +1,18 @@
 {
-	"env": {
-		"development": {
-			"plugins": ["react-transform"],
-			"extra": {
-				"react-transform": {
-					"transforms": [{
-						"transform": "react-transform-hmr",
-						"imports": ["react"],
-						"locals": ["module"]
-					},
-					{
-						"transform": "react-transform-catch-errors",
-						"imports": ["react", "redbox-react"]
-					}]
-				}
-			}
-		}
-	},
-	"presets": [
-		"react"
-	]
+	// "presets": [
+	// 	"react",
+	// 	["env", {
+	// 		"targets": {
+	// 			"node": "current",
+	// 			"browsers": ["last 2 versions", "safari >= 7"]
+	// 		},
+	// 		"debug": true,
+	// 		"modules": false
+	// 	}]
+	// ],
+	// "plugins": [
+	// 	["transform-es2015-destructuring"],
+	// 	["transform-object-rest-spread"],
+	// 	["transform-class-properties", { "spec": true }]
+	// ]
 }
