@@ -1,9 +1,7 @@
-// import autobind from 'autobind-decorator'
+// lib
 import React from 'react';
-
+// style
 import css from '../../../static/css/footer.css';
-
-// const { object, string } = React.PropTypes;
 
 function Footer(props) {
 	return(
@@ -20,9 +18,5 @@ function Footer(props) {
 		</footer>
 	);
 }
-
-// Footer.propTypes = {
-//   image: string.isRequired,
-// };
 
 export default Footer;

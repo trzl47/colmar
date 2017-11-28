@@ -1,9 +1,7 @@
-// import autobind from 'autobind-decorator'
+// lib
 import React from 'react';
-
+// styles
 import css from '../../../static/css/courses.css';
-
-// const { object, string } = React.PropTypes;
 
 function Courses(props) {
 	return(
@@ -15,7 +13,7 @@ function Courses(props) {
 				<div class="deck row">
 					<div class="hand row">
 						<div class="vertical-card" id="software">
-							<img src="..\src\images\course-software.jpg" />
+							<img src={require('../../../static/img/course-software.jpg')} />
 							<div class="card-info">
 								<h3>Software engineering</h3>
 								<p>COURSES</p>
@@ -23,7 +21,7 @@ function Courses(props) {
 							</div>
 						</div>
 						<div class="vertical-card" id="computer">
-							<img src="..\src\images\course-computer-art.jpg" />
+							<img src={require('../../../static/img/course-computer-art.jpg')} />
 							<div class="card-info">
 								<h3>Computer art</h3>
 								<p>COURSES</p>
@@ -31,7 +29,7 @@ function Courses(props) {
 							</div>
 						</div>
 						<div class="vertical-card" id="design">
-							<img src="..\src\images\course-design.jpg" />
+							<img src={require('../../../static/img/course-design.jpg')} />
 							<div class="card-info">
 								<h3>Design</h3>
 								<p>COURSES</p>
@@ -41,7 +39,7 @@ function Courses(props) {
 					</div>
 					<div class="hand row">
 						<div class="vertical-card" id="data">
-							<img src="..\src\images\course-data.jpg" />
+							<img src={require('../../../static/img/course-data.jpg')} />
 							<div class="card-info">
 								<h3>Data</h3>
 								<p>COURSES</p>
@@ -49,7 +47,7 @@ function Courses(props) {
 							</div>
 						</div>
 						<div class="vertical-card" id="business">
-							<img src="..\src\images\course-business.jpg" />
+							<img src={require('../../../static/img/course-business.jpg')} />
 							<div class="card-info">
 								<h3>Business</h3>
 								<p>COURSES</p>
@@ -57,7 +55,7 @@ function Courses(props) {
 							</div>
 						</div>
 						<div class="vertical-card" id="marketing">
-							<img src="..\src\images\course-marketing.jpg" />
+							<img src={require('../../../static/img/course-marketing.jpg')} />
 							<div class="card-info">
 								<h3>Marketing</h3>
 								<p>COURSES</p>
@@ -88,9 +86,5 @@ function Courses(props) {
 		</section>
 	);
 }
-
-// Courses.propTypes = {
-//   image: string.isRequired,
-// };
 
 export default Courses;

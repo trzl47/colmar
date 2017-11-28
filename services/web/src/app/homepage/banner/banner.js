@@ -1,15 +1,14 @@
+// lib
 import React from 'react';
-
+// style
 import css from '../../../static/css/banner.css';
-
-// const { object, string } = React.PropTypes;
 
 function Banner(props) {
 	return(
 		<section>
 			<div class="banner row">
 				<div class="left-column">
-					<img id="imgBanner" src="..\src\images\banner.jpg" />
+					<img id="imgBanner" src={require('../../../static/img/banner.jpg')}/>
 				</div>
 				<div class="right-column">
 					<div class="attention">
@@ -22,9 +21,5 @@ function Banner(props) {
 		</section>
 	);
 }
-
-// Banner.propTypes = {
-//   image: string.isRequired,
-// };
 
 export default Banner;

@@ -1,9 +1,7 @@
-// import autobind from 'autobind-decorator'
+// lib
 import React from 'react';
-
+// styles
 import css from '../../../static/css/thesis.css';
-
-// const { object, string } = React.PropTypes;
 
 function Thesis(props) {
 	return(
@@ -16,7 +14,7 @@ function Thesis(props) {
 					<div class="left-column">
 						<div class="video">
 							<video autoplay="" muted="" loop="">
-								<source src="..\src\videos\thesis.mp4" type="video/mp4" />
+								<source src={require('../../../static/img/thesis.mp4')} type="video/mp4" />
 							</video>
 							<h2>Reimagine urban</h2>
 							<p>
@@ -26,7 +24,7 @@ function Thesis(props) {
 					</div>
 					<div class="right-column">
 						<div class="horizontal-card" id="fisma">
-							<img class="desktop" src="..\src\images\thesis-fisma.jpg" />
+							<img class="desktop" src={require('../../../static/img/thesis-fisma.jpg')}/>
 							<div class="card-info">
 								<h3>Fisma: Design and</h3>
 								<p>-</p>
@@ -36,7 +34,7 @@ function Thesis(props) {
 							</div>
 						</div>
 						<div class="horizontal-card" id="nowthen">
-							<img class="desktop" src="..\src\images\thesis-now-and-then.jpg" />
+							<img class="desktop" src={require('../../../static/img/thesis-now-and-then.jpg')}/>
 							<div class="card-info">
 								<h3>Now and then</h3>
 								<br />
@@ -49,9 +47,5 @@ function Thesis(props) {
 		</section>
 	);
 }
-
-// Thesis.propTypes = {
-// 	image: string.isRequired,
-// };
 
 export default Thesis;
