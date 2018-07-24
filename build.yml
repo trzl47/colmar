@@ -11,8 +11,10 @@ services:
     #      - ./services/react:/usr/src/app
       - ./services/react:/app:z  # z needed for selinux
       - /app/node_modules
-      - /build/client-dev
+      - /build/client
     env_file: .env
+    environment:
+      - NODE_ENV=production
   react-nginx:
     build:
       context: ./services/react-nginx/
@@ -21,7 +23,7 @@ services:
     container_name: colmar-nginx
     restart: always
     volumes:
-      - ./services/react/build/client-dev/:/client
+      - ./services/react/build/client/:/client
     env_file: .env
     depends_on:
       - react
