@@ -1,0 +1,27 @@
+.flatcard {
+	display: grid;
+	grid-template-areas:
+		'fc-image'
+		'fc-info';
+		justify-content: flex-start;
+		align-items: center;
+}
+@media only screen and (min-width: 768px) {
+	.flatcard {
+		grid-template-areas:
+			'fc-image fc-info';
+	}
+}
+
+.fc-image {
+	width: 100%;
+}
+.fc-image.mobile { display: none }
+.fc-image.desktop { display: block }
+@media only screen and (min-width: 768px) {
+	.fc-image {
+		width: 254px;
+	}
+	.fc-image.mobile { display: block }
+	.fc-image.desktop { display: none }
+}

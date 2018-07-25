@@ -1,0 +1,39 @@
+.vertcard {
+	background-color:lightgrey;
+	margin: 10px 0;
+}
+@media only screen and (min-width: 768px) {
+	.vertcard {
+		display: grid;
+		grid-template-areas:
+			'vc-img'
+			'vc-info';
+		max-width: 428px;
+		margin: unset;
+	}
+}
+
+.vc-img {
+	display: none;
+}
+@media only screen and (min-width: 768px) {
+	.vc-img {
+		display: block;
+		width: 100%;
+	}
+}
+
+.vc-info {
+	padding: 10px;
+}
+.vc-info .desktop {
+	display: none;
+}
+@media only screen and (min-width: 768px) {
+	.vc-info {
+		background-color: #fff;
+	}
+	.vc-info .desktop {
+		display: block;
+	}
+}

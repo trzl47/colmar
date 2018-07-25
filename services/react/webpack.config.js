@@ -84,8 +84,8 @@ const browserConfig = {
 		new HtmlWebPackPlugin({
 			template: './src/index.html',
 			filename: './index.html',
-			favicon: './src/favicon/favicon-96x96.png',
-			// favicon: './src/favicon/favicon.ico'
+			// favicon: './src/favicon/favicon-96x96.png',
+			favicon: './src/favicon/ic-logo.png'
 		}),
 
 		new MiniCssExtractPlugin({

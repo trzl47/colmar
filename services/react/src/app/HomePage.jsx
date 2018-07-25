@@ -12,14 +12,14 @@ import '../css/homepage.css';
 
 const HomePage = () => {
 	return (
-		<React.Fragment>
+		<section className='homepage'>
 			<Header />
 			<Banner />
 			<Main />
 			<Courses />
 			<Thesis />
 			<Footer />
-		</React.Fragment>
+		</section>
 	);
 };
 

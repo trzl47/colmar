@@ -1,20 +1,14 @@
 // lib
 import React from 'react';
 // style
-import css from '../..//css/footer.css';
+import '../../css/footer.css';
 
 function Footer(props) {
 	return(
-		<footer>
-			<div class="footer row">
-				<p class="copyright">&copy; 2016 Colmar Academy. All rights reserved</p>
-				<a class="terms" href="/">
-					<span>Terms</span>
-				</a>
-				<a class="privacy" href="/">
-					<span>Privacy</span>
-				</a>
-			</div>
+		<footer className='footer'>
+			<p className='copyright'>&copy; 2016 Colmar Academy. All rights reserved</p>
+			<a className='terms' href='/'>Terms</a>
+			<a className='privacy' href='/'>Privacy</a>
 		</footer>
 	);
 }

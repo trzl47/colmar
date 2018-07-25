@@ -1,34 +1,25 @@
-/* BANNER */
 .banner {
+	display: grid;
+	grid-template-areas:
+		'banner-image'
+		'attention';
 	background-color: lightgrey;
 }
-.banner .right-column {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.banner-image {
+	width: 100%;
 }
+@media only screen and (min-width: 768px) {
+	.banner {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			'banner-image attention';
+	}
+}
+
 .attention {
 	display: flex;
-	flex-direction:column;
-	align-content: center;
+	flex-direction: column;
+	align-items: center;
 	justify-content: center;
-	padding: 40px 40px;
+	text-align: left;
 }
-
-@media only screen and (max-width: 760px) {
-	.banner.row {
-		padding:unset;
-		flex-direction:column;
-	}
-	.banner .left-column > img {
-		width: 100%;
-		padding: unset;
-	}
-
-	.attention {
-		display: flex;
-		margin: 32px 16px;
-	}
-}
-
-/* ./BANNER */

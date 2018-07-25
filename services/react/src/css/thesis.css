@@ -1,44 +1,33 @@
-/* THESIS */
-
-.thesis .video {
-	display: flex;
-	flex-direction: column;
+.thesis {
 }
-.thesis video {
-	width: 100%;
-}
-.thesis .row {
-	display: flex;
-	flex-direction: row;
-}
-.video>video>source {
-	padding-bottom: 24px;
-	width: 100%;
-	padding-right:24px;
-}
-.video>h2 {
-	padding: 24px 0;
-}
-.video > p {
-	padding: 8px 0;
-}
-.exhibit .right-column {
-	padding-left: 16px;
-}
-#fisma {
-	background-color: lightgrey;
-}
-
-@media only screen and (max-width: 760px) {
-	#fisma,
-	#nowthen,
-	.video>h2,
-	.video>p {
-		display: none;
-	}
-	.thesis video {
-		width: 100%;
+@media only screen and (min-width: 768px) {
+	.thesis {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas:
+			'thesis-header .'
+			'thesis-fig thesiscards';
 	}
 }
 
-/* ./THESIS */
+.thesis-header {
+	grid-area: thesis-header;
+}
+
+.thesis-fig {
+	grid-area: thesis-fig;
+}
+
+.thesis-vid {
+	width: 100%;
+}
+
+.thesiscards {
+	display: none;
+}
+@media only screen and (min-width: 768px) {
+	.thesiscards {
+		grid-area: thesiscards;
+		display: block;
+	}
+}

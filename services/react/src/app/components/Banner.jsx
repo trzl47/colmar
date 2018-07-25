@@ -1,25 +1,19 @@
 // lib
 import React from 'react';
 // style
-import css from '../..//css/banner.css';
+import '../../css/banner.css';
 
-function Banner(props) {
-	return(
-		<section>
-			<div class="banner row">
-				<div class="left-column">
-					<img id="imgBanner" src={require('../..//img/banner.jpg')}/>
-				</div>
-				<div class="right-column">
-					<div class="attention">
-						<h1>Learn something<br />new everyday</h1>
-						<h3>Lorem ipsum dolor sit amet,<br />consectetur adipsiscing elit.</h3>
-						<button class="btn btn-default" id="start">Start here</button>
-					</div>
-				</div>
-			</div>
-		</section>
+const Banner = () => {
+	return (
+		<figure className='banner'>
+			<img className='banner-image' alt='students at table' src={require('../../img/banner.jpg')} />
+			<figcaption className='attention'>
+				<h1>Learn something new everyday</h1>
+				<h3>Lorem ipsum dolor sit amet, consectetur adipsiscing elit.</h3>
+				<button className='btn'>Start here</button>
+			</figcaption>
+		</figure>
 	);
-}
+};
 
 export default Banner;
