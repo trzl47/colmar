@@ -4,7 +4,7 @@ services:
     build:
       context: ./services/react/
       dockerfile: Dockerfile
-    image: colmar-react
+    image: react
     container_name: react
     restart: unless-stopped
     volumes:
@@ -19,7 +19,7 @@ services:
     build:
       context: ./services/react-nginx/
       dockerfile: Dockerfile
-    image: colmar-nginx
+    image: react-nginx
     container_name: colmar-nginx
     restart: always
     volumes:
@@ -31,7 +31,7 @@ services:
     build:
       context: ./services/reverseproxy/
       dockerfile: Dockerfile
-    image: colmar-proxy
+    image: reverseproxy
     container_name: colmar-proxy
     restart: always
     ports:
