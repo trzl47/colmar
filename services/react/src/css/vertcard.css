@@ -24,10 +24,13 @@
 }
 
 .vc-info {
-	padding: 10px;
+	padding: 16px;
 }
 .vc-info .desktop {
 	display: none;
+}
+.vc-info h3 {
+	padding-bottom: 8px;
 }
 @media only screen and (min-width: 768px) {
 	.vc-info {

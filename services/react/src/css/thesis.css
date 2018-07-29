@@ -1,17 +1,22 @@
-.thesis {
-}
 @media only screen and (min-width: 768px) {
 	.thesis {
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-gap: 24px;
+		grid-template-columns: .6fr .4fr;
 		grid-template-areas:
-			'thesis-header .'
+			'thesis-header thesis-header'
 			'thesis-fig thesiscards';
+		padding: 32px 24px;
 	}
 }
 
 .thesis-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 	grid-area: thesis-header;
+	padding: 32px 0;
 }
 
 .thesis-fig {
@@ -20,6 +25,10 @@
 
 .thesis-vid {
 	width: 100%;
+	padding-bottom: 24px;
+}
+.vid-caption h2 {
+	padding-bottom: 8px;
 }
 
 .thesiscards {

@@ -3,17 +3,24 @@
 	grid-template-areas:
 		'banner-image'
 		'attention';
-	background-color: lightgrey;
+	background-color: #d3d3d3;
+	color: #4d4d4d;
 }
+
+@media only screen and (min-width: 768px) {
+	.banner {
+		grid-template-columns: .6fr .4fr;
+		grid-gap: 24px;
+		grid-template-areas:
+			'banner-image attention';
+		padding: 32px 24px;
+	}
+}
+
 .banner-image {
 	width: 100%;
 }
 @media only screen and (min-width: 768px) {
-	.banner {
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			'banner-image attention';
-	}
 }
 
 .attention {
@@ -22,4 +29,8 @@
 	align-items: center;
 	justify-content: center;
 	text-align: left;
+}
+.attention h3 {
+	padding-top: 32px;
+	padding-bottom: 24px;
 }

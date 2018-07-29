@@ -3,4 +3,17 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	border-top: solid 1px #c6c1c1;
+	padding: 16px 24px;
+}
+
+.terms,
+.privacy {
+	display: none;
+}
+@media only screen and (min-width: 768px) {
+	.terms,
+	.privacy {
+		display: block;
+	}
 }

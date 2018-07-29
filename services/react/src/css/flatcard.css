@@ -8,8 +8,12 @@
 }
 @media only screen and (min-width: 768px) {
 	.flatcard {
+		grid-template-columns: .35fr .65fr;
+		grid-gap: 16px;
 		grid-template-areas:
 			'fc-image fc-info';
+		padding: 16px;
+		border: solid 1px #c6c1c1;
 	}
 }
 
@@ -24,4 +28,12 @@
 	}
 	.fc-image.mobile { display: block }
 	.fc-image.desktop { display: none }
+}
+
+.fc-info h3 {
+	padding-bottom: 8px;
+}
+
+.fc-info p {
+	padding-bottom: 8px;
 }

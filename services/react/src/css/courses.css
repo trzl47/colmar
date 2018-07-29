@@ -1,23 +1,26 @@
 .courses {
-		display: flex;
-		flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
 	.courses {
 		align-items: center;
 		justify-content: center;
 		background-color:lightgrey;
+		padding: 32px 72px;
 	}
 }
 
-.coursecards {
+.courses-header {
+	padding-bottom: 32px;
 }
+
 @media only screen and (min-width: 768px) {
 	.coursecards {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
-		grid-gap: 20px;
+		grid-gap: 32px;
 		grid-template-areas:
 			'1 2 3'
 			'4 5 6';

@@ -18,7 +18,7 @@ services:
       context: ./services/react-nginx/
       dockerfile: Dockerfile
     image: react-nginx
-    container_name: colmar-nginx
+    container_name: react-nginx
     restart: always
     volumes:
       - ./services/react/build/client-dev/:/client
@@ -30,7 +30,7 @@ services:
       context: ./services/reverseproxy/
       dockerfile: Dockerfile
     image: reverseproxy
-    container_name: colmar-proxy
+    container_name: reverseproxy
     restart: always
     ports:
       - 80:80 # react app

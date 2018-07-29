@@ -1,29 +1,62 @@
+.header {
+	height: 64px;
+}
 .navbar {
-	display: grid;
-	grid-template-areas:
-		'logo'
-		'menu';
+	display: flex;
+	flex-direction: row;
 	align-items: flex-start;
-	justify-content: flex-start;
+	justify-content: space-around;
 	border-bottom: solid 1px #c6c1c1;
+}
+.navbar span {
+	display: none;
 }
 @media only screen and (min-width: 768px) {
 	.navbar {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-around;
+	}
+	.navbar span {
+		display: block;
 	}
 }
 
+.campus {
+	grid-area: campus;
+}
+
+.online {
+	grid-area: online;
+}
+
+.login {
+	grid-area: login;
+}
+
+.brand {
+	grid-area: brand;
+	line-height: 32px;
+}
+.colmar {
+	color: #2a2a2a;
+	font-weight: bold;
+}
+.academy {
+	color: #4d4d4d;
+}
+
 .menu {
-	display: inline-flex;
+	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 }
 
-.navbar a {
-	display: inline-flex;
+.nav-item {
+	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
+	text-decoration: none;
+	color: #4d4d4d;
+}
+.nav-item:hover {
+	color: #00b3ff;
 }
