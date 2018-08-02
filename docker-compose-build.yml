@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3'
 services:
   react:
     build:
@@ -15,16 +15,18 @@ services:
     env_file: .env
     environment:
       - NODE_ENV=production
-  react-nginx:
+  colmar-nginx:
     build:
-      context: ./services/react-nginx/
+      context: ./services/colmar-nginx/
       dockerfile: Dockerfile
-    image: react-nginx
-    container_name: react-nginx
+    image: colmar-nginx
+    container_name: colmar-nginx
     restart: always
     volumes:
       - ./services/react/build/client/:/client
     env_file: .env
+    environment:
+      - NODE_ENV=production
     depends_on:
       - react
   reverseproxy:
@@ -38,4 +40,4 @@ services:
       - 80:80 # react app
     depends_on:
       - react
-      - react-nginx
+      - colmar-nginx

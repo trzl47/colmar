@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3'
 services:
   react:
     build:
@@ -13,12 +13,12 @@ services:
       - /app/node_modules
       - /build/client-dev
     env_file: .env
-  react-nginx:
+  colmar-nginx:
     build:
-      context: ./services/react-nginx/
+      context: ./services/colmar-nginx/
       dockerfile: Dockerfile
-    image: react-nginx
-    container_name: react-nginx
+    image: colmar-nginx
+    container_name: colmar-nginx
     restart: always
     volumes:
       - ./services/react/build/client-dev/:/client
@@ -36,4 +36,4 @@ services:
       - 80:80 # react app
     depends_on:
       - react
-      - react-nginx
+      - colmar-nginx

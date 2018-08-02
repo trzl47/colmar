@@ -1,14 +1,9 @@
 version: '3'
 services:
-  react-nginx:
+  colmar-nginx:
     image: trzl/portfolio:colmar-react.1
-    restart: unless-stopped
     container_name: colmar-nginx
-    networks:
-      - colmar
-    env_file: .env
-    environment:
-      - NODE_ENV=production
+    restart: unless-stopped
   reverseproxy:
     image: trzl/portfolio:colmar-proxy.1
     container_name: colmar-proxy
@@ -17,14 +12,12 @@ services:
       - "80"
       - "443"
     depends_on:
-      - react-nginx
-   environment:
-      VIRTUAL_HOST: colmarg.tbrownkcdev.com
-      LETSENCRYPT_HOST: colmarg.tbrownkcdev.com
+      - colmar-nginx
+    environment:
+      VIRTUAL_HOST: colmar.tbrownkcdev.com
+      LETSENCRYPT_HOST: colmar.tbrownkcdev.com
       LETSENCRYPT_EMAIL: brownty47@gmail.com
 networks:
   default:
     external:
       name: webproxy
-  colmar:
-    driver: bridge
